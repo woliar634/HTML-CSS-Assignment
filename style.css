@@ -40,7 +40,7 @@ header {
   cursor: pointer;
 }
 
-/* Hero Section */
+
 .hero {
   display: flex;
   align-items: center;
@@ -120,7 +120,6 @@ header {
   font-weight: 600;
 }
 
-/* Footer */
 footer {
   background-color: hsl(192, 100%, 9%);
   color: #fff;
