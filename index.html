@@ -1,151 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Huddle</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            /* Colors */
-            --pink: hsl(322, 100%, 66%);
-            --very-pale-cyan: hsl(193, 100%, 96%);
-            --very-dark-cyan: hsl(192, 100%, 9%);
-            --grayish-blue: hsl(208, 11%, 55%);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huddle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-            /* Typography */
-            --font-body: 'Open Sans', sans-serif;
-            --font-heading: 'Poppins', sans-serif;
-            --font-size-body: 18px;
-        }
+    header {
+      background: #f5f9ff;
+      padding: 20px;
+      text-align: center;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    header h1 {
+      margin: 0;
+      color: #333;
+    }
 
-        body {
-            font-family: var(--font-body);
-            font-size: var(--font-size-body);
-            line-height: 1.6;
-            background-color: var(--very-pale-cyan);
-            color: var(--grayish-blue);
-            margin: 0;
-        }
+    header p {
+      color: #777;
+    }
 
-        header {
-            text-align: center;
-            padding: 2rem;
-        }
 
-        header h1 {
-            font-family: var(--font-heading);
-            font-weight: 600;
-            color: var(--very-dark-cyan);
-            margin-bottom: 1rem;
-        }
 
-        header p {
-            max-width: 600px;
-            margin: 0 auto 1.5rem auto;
-        }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
 
-        header .cta-button {
-            display: inline-block;
-            background-color: var(--pink);
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-        }
+    footer a {
+      color: #ff4081;
+      text-decoration: none;
+    }
 
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        section h2 {
-            font-family: var(--font-heading);
-            font-weight: 600;
-            color: var(--very-dark-cyan);
-            margin-bottom: 1rem;
-        }
-
-        section p {
-            max-width: 600px;
-            margin: 0 auto 2rem auto;
-        }
-
-        footer {
-            background-color: var(--very-dark-cyan);
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        footer a {
-            color: var(--pink);
-            text-decoration: none;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-icons a {
-            color: white;
-            font-size: 1.5rem;
-        }
-
-        /* Responsive Design */
-        @media (min-width: 768px) {
-            header p, section p {
-                font-size: 1.25rem;
-            }
-        }
-
-        @media (min-width: 1440px) {
-            header {
-                padding: 3rem;
-            }
-        }
-    </style>
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Build The Community Your Fans Will Love</h1>
-        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-        <a href="#" class="cta-button">Get Started For Free</a>
-    </header>
+  <header>
+    <h1>Build The Community Your Fans Will Love</h1>
+    <p>Huddle re-imagines the way we build communities. You have a voice, so does your audience.</p>
+  </header>
 
-    <section>
-        <h2>Grow Together</h2>
-        <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
-    </section>
+  <div class="cta">
+    <button>Get Started For Free</button>
+  </div>
 
-    <section>
-        <h2>Flowing Conversations</h2>
-        <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
-    </section>
+  <div class="features">
+    <div class="feature">
+      <img src="images/illustration-grow-together.svg" alt="Grow Together">
+      <h2>Grow Together</h2>
+      <p>Generate meaningful discussions with your audience and build a strong, loyal community.</p>
+    </div>
+    <div class="feature">
+      <img src="images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
+      <h2>Flowing Conversations</h2>
+      <p>Our threads have just-in-time loading for a more natural flow.</p>
+    </div>
+    <div class="feature">
+      <img src="images/illustration-your-users.svg" alt="Your Users">
+      <h2>Your Users</h2>
+      <p>Integrate Huddle with your app's authentication solution for seamless engagement.</p>
+    </div>
+  </div>
 
-    <section>
-        <h2>Your Users</h2>
-        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
-    </section>
-
-    <footer>
-        <p>© Copyright 2018 Huddle. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
+  <footer>
+    <p>&copy; 2023 Huddle. All rights reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
 </body>
 </html>
